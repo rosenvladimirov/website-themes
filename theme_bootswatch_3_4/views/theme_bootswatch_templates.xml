@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<template id="theme_customize" inherit_id="website.theme_customize" name="theme_customize Bootswatch">
+    <xpath expr="div" position="replace">
+
+      <div id="theme_customize_modal" class="modal fade bs-example-modal-sm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="loading_backdrop"></div>
+            <div class="modal-header">
+              <button type="button" class="close">×</button>
+              <h4 class="modal-title">Customize your theme</h4>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <label class="checked">
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/img/bootswatch_default_thumbnail.png" alt="Default Theme"/>
+                      <input name="theme" type="radio" data-xmlid="" checked="checked"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/cerulean/thumbnail.png" alt="Cerulean"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_cerulean"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/cosmo/thumbnail.png" alt="Cosmo"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_cosmo" data-disable="ee"/>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/cyborg/thumbnail.png" alt="Cyborg"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_cyborg"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/darkly/thumbnail.png" alt="Flatly"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_darkly"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/flatly/thumbnail.png" alt="Flatly"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_flatly"/>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/journal/thumbnail.png" alt="Journal"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_journal"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/lumen/thumbnail.png" alt="Readable"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_lumen"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/paper/thumbnail.png" alt="Readable"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_paper"/>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/readable/thumbnail.png" alt="Readable"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_readable"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/sandstone/thumbnail.png" alt="Simplex"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_sandstone"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/simplex/thumbnail.png" alt="Simplex"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_simplex"/>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/slate/thumbnail.png" alt="Slate"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_slate"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/spacelab/thumbnail.png" alt="Spacelab"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_spacelab"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/superhero/thumbnail.png" alt="United"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_superhero"/>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/united/thumbnail.png" alt="United"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_united"/>
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      <img style="width: 120px; height: 70px;" src="/theme_bootswatch_3_4/static/src/less/yeti/thumbnail.png" alt="United"/>
+                      <input name="theme" type="radio" data-xmlid="theme_bootswatch_3_4.theme_yeti"/>
+                    </label>
+                  </td>
+                  <td/>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xpath>
+</template>
+
+<!--
+     All Default Themes
+-->
+
+    <template id="theme_bootswatch_3_4.theme_cerulean" name="Cerulean v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cerulean/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cerulean/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_cosmo" name="Cosmo v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cosmo/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cosmo/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_cyborg" name="Cyborg v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cyborg/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/cyborg/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_darkly" name="Darkly v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/darkly/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/darkly/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_flatly" name="Flatly v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/flatly/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/flatly/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_journal" name="Journal v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/journal/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/journal/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_lumen" name="Lumen v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/lumen/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/lumen/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_paper" name="Paper v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/paper/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/paper/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_readable" name="Readable v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/readable/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/readable/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_sandstone" name="Simplex v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/sandstone/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/sandstone/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_simplex" name="Simplex v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/simplex/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/simplex/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_slate" name="Slate v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/slate/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/slate/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_spacelab" name="Spacelab v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/spacelab/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/spacelab/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_superhero" name="Superhero v3.4.1" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/superhero/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/superhero/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_united" name="United" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/united/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/united/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="theme_bootswatch_3_4.theme_yeti" name="United" inherit_id="website.assets_frontend" active="False" customize_show="False">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/yeti/bootswatch.less' t-ignore="true"/>
+            <link rel="stylesheet" type="text/less" href='/theme_bootswatch_3_4/static/src/less/yeti/variables.less' t-ignore="true"/>
+        </xpath>
+    </template>
+
+</data>
+</odoo>
